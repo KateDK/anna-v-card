@@ -7,18 +7,28 @@ body {
   background-image: url('sakura.png');
   /*This pattern is downloaded from www.subtlepatterns.com
   If you need more, that's where to get'em.*/
+  font-family: 'Lucida Handwriting', 'Papyrus', 'Lucida Console';
 }
 .container {
+  margin-top: 4em;
+  margin-bottom: 2em;
   align-self: center;
-  border: black solid 2px;
-  width: 100%;
+  border: #d8e2dc solid 8px;
+  border-radius: 10px;
+  width: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url('watercolor.png');
-  /*This pattern is downloaded from www.subtlepatterns.com
-  If you need more, that's where to get'em.*/
+  background-color: #ece4db;
+  color: #fec89a;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -200px;
 }
 
 .image-cropper {
@@ -28,19 +38,33 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  border: #d8e2dc solid 8px;
 }
-img {
-  border: black solid 2px;
 
+img {
   display: inline;
   margin: 0 auto;
-  /* margin-left: -25%; */
   height: 150%;
   width: auto;
 }
-footer {
-  border: black solid 2px;
 
+.bow-cropper {
+  height: 300px;
+  width: auto;
+  margin: -50px;
+  margin-left: 300px;
+  transform: rotate(330deg);
+}
+
+.bow {
+  /* height: 300px;
+  width: auto;
+  margin: -120px;
+  margin-left: 300px;
+  transform: rotate(330deg); */
+}
+
+footer {
   text-align: center;
   position: absolute;
   bottom: 0;
